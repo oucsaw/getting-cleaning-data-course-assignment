@@ -26,7 +26,7 @@ if ( ! file.exists( dataDIR )       ) { dir.create( dataDIR )       }
 if ( ! file.exists( downloadedZIP ) ) {
      # Download the file (which as it is https, means that we need to use
      # method = 'curl' on this Mac)
-     download.file(dataURL, dest=downloadedZIP, method='curl')
+     download.file(zipfileURL, dest=downloadedZIP, method='curl')
 }
 
 #
